@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+
+
+<style>
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: blue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+body {
+font-family:courier;
+
+}
+p {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+</style>
+<body>
+
+<h1>This is a heading</h1>
+
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+<p>이미지를 눌러 링크로 이동해보세요.</p>
+<a href="https://www.naver.com/" target="_blank"><img src="https://t1.daumcdn.net/cfile/tistory/274EBD4155C0305933" alt=" alt tutorial" style="width:50px;height:42px;"></a>
+
+<a href="https://www.naver.com/" target="_blank" style="text-decoration:none">네이버를 방문해 보세요!</a>
+<a href="https://www.naver.com/" title="네이버 방문하기"target="_blank">네이버를 방문하기</a>
+<!-- 현재창에서 링크 이동 -->
+<button type="button" onclick="location.href='https://www.naver.com/';"> 현재 창에서 네이버 열기 </button>
+<!-- 새 창으로 링크 이동 -->
+<button type="button" onclick="window.open('https://www.naver.com/');"> 새 창에서 네이버 열기 </button>
+
+</body>
+</html>
