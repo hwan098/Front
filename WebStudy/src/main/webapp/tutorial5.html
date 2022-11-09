@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Class</title>
+<style>
+.city{
+	background-color: tomato;
+	color:white;
+	border: 2px solid black; 
+	margin: 20px;
+	padding: 20px;
+}
+.main {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<button onclick="hideElements()"> Hide Style</button>
+
+<div class="city main">
+	<h2>London</h2>
+	<p>London is the capital of England.</p>
+</div>
+
+<div class="city">
+	<h2>Madrid</h2>
+	<p>Madrid is the capital of Spain.</p>
+</div>
+
+<div class="city">
+	<h2>Seoul</h2>
+	<p>Seoul is the capital of South Korea.</p>
+</div>
+
+<script>
+function hideElements(){
+	var x = document.getElementsByClassName("city");
+	for (var i=0; i<x.length; i++){
+		x[i].style.display = "none";
+	}
+}
+</script>
+</body>
+</html>
